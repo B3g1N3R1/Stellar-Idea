@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Stellar Money App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>My Stellar Money App</h1>
+        <div class="purse-info">
+            <div id="person1-id">Person 1’s Purse ID: Waiting...</div>
+            <div id="person2-id">Person 2’s Purse ID: Waiting...</div>
+            <div id="person3-id">Person 3’s Purse ID: Waiting...</div>
+        </div>
+        <div class="controls">
+            <label for="usd-amount">Start with how much USD?</label>
+            <input type="number" id="usd-amount" value="10" min="1">
+            <button id="start-button">Start Sending Money!</button>
+            <button id="reset-button">Reset</button>
+            <button id="send-again-button">Send Again to Person 3</button>
+            <button id="reverse-button">Reverse to Person 2</button>
+            <button id="double-swap-button">Double Swap for Person 1</button>
+        </div>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="message-box">
+            <ul id="messages"></ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./node_modules/stellar-sdk/dist/stellar-sdk.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

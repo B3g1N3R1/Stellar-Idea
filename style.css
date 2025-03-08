@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+h1 {
+    color: #333;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+#reset-button {
+    background-color: #f44336;
+}
+#reset-button:hover {
+    background-color: #da190b;
+}
+#send-again-button {
+    background-color: #2196F3;
+}
+#send-again-button:hover {
+    background-color: #1976D2;
+}
+#person1-id, #person2-id, #person3-id {
+    margin: 10px 0;
+    font-weight: bold;
+}
+#usd-amount {
+    padding: 5px;
+    width: 60px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+#messages {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+#messages li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.success {
+    color: #4CAF50;
+}
+.error {
+    color: #f44336;
+}
